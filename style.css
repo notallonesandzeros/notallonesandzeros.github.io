@@ -4,19 +4,58 @@ main {
 }
 
 h1 {
-    font-size: 4.242rem;
+    font-size: 4rem;
     line-height: 4.5rem;
     margin-top: 3rem;
-    font-family: 'Monoton', cursive;
+    font-family: 'Monoton', 'Roboto Condensed', sans-serif;
     font-weight: normal;
 }
 
-h2 {
-    font-size: 2.828rem;
-    line-height: 3rem;
-    margin-top: 3rem;
-    font-family: 'Open Sans', sans-serif;
+#occupation {
+    display: inline-block;
 }
+
+#chilli-label {
+    position: relative;
+    float: right;
+    bottom: 5px;
+    
+}
+
+h2 {
+    font-size: 2.472rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    margin-bottom: 0px;
+    margin-left: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#chillipharm {
+    text-align: center;
+    background-color: red;
+    border-radius: 3px;
+    padding: 1px 2px 1px 2px;
+    color: white;
+    font-size: .400rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    display: inline-block;
+}
+
+#icons {
+    margin-top: 300px;
+    font-size: 2.472em;
+    display: block;
+    position: relative;
+    bottom: 20px;
+    left: 5px;
+}
+
+
 
 /*
 font-family: 'Open Sans', sans-serif;
