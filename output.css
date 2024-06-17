@@ -753,8 +753,43 @@ video {
   color: rgb(75 75 75 / var(--tw-text-opacity));
 }
 
+.editor {
+  display: flex;
+  height: 100%;
+  width: 50%;
+  flex-direction: column;
+  overflow: scroll;
+  --tw-bg-opacity: 1;
+  background-color: rgb(39 39 39 / var(--tw-bg-opacity));
+  padding: 0.5rem;
+}
+
+.line {
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
+  height: 0.25rem;
+  width: 0.75rem;
+  border-radius: 9999px;
+}
+
 .mb-20 {
   margin-bottom: 5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+.ml-4 {
+  margin-left: 1rem;
+}
+
+.ml-6 {
+  margin-left: 1.5rem;
 }
 
 .flex {
@@ -773,12 +808,28 @@ video {
   height: 100vh;
 }
 
+.w-1 {
+  width: 0.25rem;
+}
+
 .w-1\/2 {
   width: 50%;
 }
 
 .w-1\/4 {
   width: 25%;
+}
+
+.w-2 {
+  width: 0.5rem;
+}
+
+.w-4 {
+  width: 1rem;
+}
+
+.w-6 {
+  width: 1.5rem;
 }
 
 .w-fit {
@@ -859,6 +910,11 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-yellow {
+  --tw-bg-opacity: 1;
+  background-color: rgb(237 178 65 / var(--tw-bg-opacity));
 }
 
 .bg-\[radial-gradient\(_var\(--tw-gradient-stops\)\)\] {
