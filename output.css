@@ -1424,6 +1424,28 @@ video {
       linear-gradient(90deg, #272727 .05rem, transparent .05rem);
     background-size: .25rem .25rem;
   }
+
+  .lg\:upgrade-background-lg {
+    background-image: linear-gradient(120deg, transparent .9rem, #272727 .9rem),
+      linear-gradient(240deg, transparent .9rem, #272727 .9rem);
+    background-size: .8rem .8rem;
+  }
+
+  .lg\:battery-lg {
+    background-image: radial-gradient(#272727 .1rem, transparent .1rem);
+    background-size: .4rem .4rem;
+    display: flex;
+    height: 6rem;
+    width: 12rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    border-width: 4px;
+    --tw-border-opacity: 1;
+    border-color: rgb(39 39 39 / var(--tw-border-opacity));
+    --tw-bg-opacity: 1;
+    background-color: rgb(161 196 87 / var(--tw-bg-opacity));
+  }
 }
 
 .hover\:bg-blue:hover {
@@ -1500,9 +1522,41 @@ video {
     padding: 1rem;
   }
 
+  .lg\:p-1\.5 {
+    padding: 0.375rem;
+  }
+
+  .lg\:p-2 {
+    padding: 0.5rem;
+  }
+
+  .lg\:p-\[2rem\] {
+    padding: 2rem;
+  }
+
+  .lg\:p-\[2\.5rem\] {
+    padding: 2.5rem;
+  }
+
+  .lg\:p-\[\.5rem\] {
+    padding: .5rem;
+  }
+
+  .lg\:p-\[1rem\] {
+    padding: 1rem;
+  }
+
+  .lg\:p-\[\.8rem\] {
+    padding: .8rem;
+  }
+
   .lg\:px-20 {
     padding-left: 5rem;
     padding-right: 5rem;
+  }
+
+  .lg\:pr-4 {
+    padding-right: 1rem;
   }
 
   .lg\:pt-8 {

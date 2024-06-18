@@ -222,11 +222,15 @@
 }
 
 @layer components {
+  .upgrade-background-lg {
+    background-image: linear-gradient(120deg, transparent .9rem, #272727 .9rem),
+      linear-gradient(240deg, transparent .9rem, #272727 .9rem);
+    background-size: .8rem .8rem;
+  }
   .upgrade-background {
     background-image: linear-gradient(120deg, transparent 1.1rem, #272727 1rem),
       linear-gradient(240deg, transparent 1.1rem, #272727 1rem);
     background-size: 1rem 1rem;
-
   }
   .boost-team-background {
     background: radial-gradient(transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent),
@@ -234,6 +238,11 @@
       linear-gradient(#3C4CA0 2px, transparent 2px) 0 -1px,
       linear-gradient(90deg, #3C4CA0 2px, #e5e5f7 2px) -1px 0;
     background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
+  }
+  .battery-lg {
+    background-image: radial-gradient(#272727 .1rem, transparent .1rem);
+    background-size: .4rem .4rem;
+    @apply w-48 h-24 rounded-lg bg-green border-4 border-grey flex items-center justify-center;
   }
   .battery {
     background-image: radial-gradient(#272727 .2rem, transparent .2rem);
