@@ -159,10 +159,10 @@
     background-size: .25rem .25rem;
   }
   .card-container {
-    @apply bg-pale-orange pb-3 border-2 border-grey rounded-lg relative z-10;
+    @apply bg-pale-orange pb-3 border-4 lg:border-2 border-grey rounded-lg relative z-10 overflow-hidden;
   }
   .card-image-area {
-    @apply max-h-80 lg:max-h-48 w-full flex overflow-hidden;
+    @apply max-h-80 lg:max-h-48 w-full flex overflow-hidden border-b-4 lg:border-b-2 border-b-grey;
   }
   .card-text-area {
     @apply p-8 lg:p-4;
@@ -215,6 +215,9 @@
   }
   .lg-line {
     @apply w-10 h-2 lg:w-5 lg:h-1 rounded-full;
+  }
+  .full-line {
+    @apply w-full h-2 lg:w-1 lg:h-1 rounded-full;
   }
 
 }
