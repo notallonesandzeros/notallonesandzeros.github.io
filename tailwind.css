@@ -157,10 +157,31 @@
 
 @layer components {
   .editor {
-    @apply flex flex-col bg-grey w-1/2 h-full p-2 overflow-scroll;
+    @apply flex flex-col bg-dark-blue w-1/2 h-full p-2 overflow-scroll;
   }
-  .line {
-    @apply w-3 h-1 rounded-full mr-1 mb-1;
+  .editor-line {
+    @apply w-3 h-1 rounded-full mr-1 mb-1
+  }
+  .web-app {
+    @apply flex bg-white w-1/2 h-full;
+  }
+  .web-app-body {
+    @apply flex flex-col flex-grow h-full overflow-scroll p-2;
+  }
+  .web-app-header {
+    @apply grid grid-cols-4 mb-6;
+  }
+  .web-app-table {
+    @apply grid grid-cols-3;
+  }
+  .web-table-circle {
+    @apply w-3 h-3 rounded-full my-1 group-hover:bg-yellow;
+  }
+  .web-app-line {
+    @apply w-3 h-1 rounded-full self-center justify-self-end group-hover:bg-yellow;
+  }
+  .web-app-row {
+    @apply contents;
   }
 }
 
