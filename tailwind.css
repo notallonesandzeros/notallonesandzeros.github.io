@@ -129,59 +129,93 @@
 }
 
 @layer components {
+  .hero {
+    @apply h-screen w-screen bg-orange;
+  }
+  .hero-shadow {
+    background-image: radial-gradient(#272727 .12rem, transparent .12rem);
+    background-size: .8rem .8rem;
+  }
+  .hero-shadow-lg {
+    background-image: radial-gradient(#272727 .06rem, transparent .06rem);
+    background-size: .4rem .4rem;
+  }
+}
+
+@layer components {
   .card {
-    @apply mb-20 max-w-96 relative ;
+    @apply mb-20 w-full lg:w-[400px] relative;
   }
   .card-shadow {
+    @apply h-full w-full absolute top-4 left-4 rounded-lg;
+    background-image: linear-gradient(#272727 .1rem, transparent .1rem),
+      linear-gradient(90deg, #272727 .1rem, transparent .1rem);
+    background-size: .6rem .6rem;
+  }
+  .card-shadow-lg {
     @apply h-full w-full absolute top-2 left-2 rounded-lg;
     background-image: linear-gradient(#272727 .05rem, transparent .05rem),
       linear-gradient(90deg, #272727 .05rem, transparent .05rem);
     background-size: .25rem .25rem;
   }
   .card-container {
-    @apply bg-pale-orange pb-3 border-2 border-grey rounded-lg relative z-10 overflow-hidden;
+    @apply bg-pale-orange pb-3 border-2 border-grey rounded-lg relative z-10;
   }
   .card-image-area {
-    @apply h-40 w-full flex;
+    @apply max-h-80 lg:max-h-48 w-full flex overflow-hidden;
   }
   .card-text-area {
-    @apply p-4;
+    @apply p-8 lg:p-4;
   }
   .card-title {
-    @apply text-2xl font-bold text-grey font-roboto font-bold;
+    @apply text-5xl lg:text-4xl font-bold text-grey font-roboto font-bold mb-6 lg:mb-2;
   }
   .card-text {
-    @apply text-lg text-[#4B4B4B] font-roboto-slab font-normal;
+    @apply text-3xl lg:text-lg text-[#4B4B4B] font-roboto-slab font-normal;
   }
 }
 
 @layer components {
   .editor {
-    @apply flex flex-col bg-dark-blue w-1/2 h-full p-2 overflow-scroll;
+    @apply flex flex-col bg-dark-blue w-1/2 p-4 lg:p-2 overflow-scroll;
   }
   .editor-line {
-    @apply w-3 h-1 rounded-full mr-1 mb-1
+    @apply rounded-full mr-2 mb-2 lg:mr-1 lg:mb-1;
   }
   .web-app {
-    @apply flex bg-white w-1/2 h-full;
+    @apply flex bg-white w-1/2;
   }
   .web-app-body {
-    @apply flex flex-col flex-grow h-full overflow-scroll p-2;
+    @apply flex flex-col flex-grow h-full overflow-scroll p-4 lg:p-2;
   }
   .web-app-header {
-    @apply grid grid-cols-4 mb-6;
+    @apply grid grid-cols-4 mb-10 lg:mb-6;
   }
   .web-app-table {
-    @apply grid grid-cols-3;
+    @apply flex flex-col;
   }
   .web-table-circle {
-    @apply w-3 h-3 rounded-full my-1 group-hover:bg-yellow;
+    @apply w-6 h-6 lg:w-3 lg:h-3 rounded-full my-2 lg:my-1 group-hover:bg-yellow;
   }
   .web-app-line {
-    @apply w-3 h-1 rounded-full self-center justify-self-end group-hover:bg-yellow;
+    @apply rounded-full self-center justify-self-end;
   }
   .web-app-row {
-    @apply contents;
+    @apply grid grid-cols-3 hover:bg-yellow px-2 lg:px-1;
   }
+
+  .xs-line {
+    @apply w-4 h-2 lg:w-2 lg:h-1 rounded-full;
+  }
+  .sm-line {
+    @apply w-6 h-2 lg:w-4 lg:h-1 rounded-full;
+  }
+  .md-line {
+    @apply w-8 h-2 lg:w-4 lg:h-1 rounded-full;
+  }
+  .lg-line {
+    @apply w-10 h-2 lg:w-5 lg:h-1 rounded-full;
+  }
+
 }
 
