@@ -266,7 +266,7 @@
 
 @layer components {
   .divider {
-    @apply w-40 h-1 bg-orange self-center my-20;
+    @apply w-40 h-1 bg-orange self-center my-20 rounded-full;
   }
 }
 
