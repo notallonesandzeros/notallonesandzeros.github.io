@@ -802,8 +802,8 @@ video {
 
 .card-text {
   font-family: Roboto Slab, serif;
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
   font-weight: 400;
   --tw-text-opacity: 1;
   color: rgb(75 75 75 / var(--tw-text-opacity));
@@ -1017,8 +1017,23 @@ video {
   font-variation-settings: "FILL" 1;
 }
 
+.divider {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  height: 0.25rem;
+  width: 10rem;
+  align-self: center;
+  --tw-bg-opacity: 1;
+  background-color: rgb(210 101 77 / var(--tw-bg-opacity));
+}
+
 .col-span-2 {
   grid-column: span 2 / span 2;
+}
+
+.my-28 {
+  margin-top: 7rem;
+  margin-bottom: 7rem;
 }
 
 .my-4 {
@@ -1028,6 +1043,10 @@ video {
 
 .mb-2 {
   margin-bottom: 0.5rem;
+}
+
+.mb-20 {
+  margin-bottom: 5rem;
 }
 
 .mb-28 {
@@ -1060,6 +1079,10 @@ video {
 
 .mt-12 {
   margin-top: 3rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
 }
 
 .flex {
@@ -1402,6 +1425,11 @@ video {
   color: rgb(39 39 39 / var(--tw-text-opacity));
 }
 
+.text-lighter-grey {
+  --tw-text-opacity: 1;
+  color: rgb(206 206 206 / var(--tw-text-opacity));
+}
+
 .text-orange {
   --tw-text-opacity: 1;
   color: rgb(210 101 77 / var(--tw-text-opacity));
@@ -1464,6 +1492,11 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:my-20 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
   .lg\:mb-2 {
     margin-bottom: 0.5rem;
   }

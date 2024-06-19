@@ -181,7 +181,7 @@
     @apply text-5xl lg:text-4xl font-bold text-grey font-roboto font-bold mb-6 lg:mb-2;
   }
   .card-text {
-    @apply text-3xl lg:text-lg text-[#4B4B4B] font-roboto-slab font-normal;
+    @apply text-4xl lg:text-lg text-[#4B4B4B] font-roboto-slab font-normal;
   }
 }
 
@@ -261,6 +261,12 @@
   }
   .bolt {
     font-variation-settings: "FILL" 1;
+  }
+}
+
+@layer components {
+  .divider {
+    @apply w-40 h-1 bg-orange self-center my-20;
   }
 }
 
