@@ -130,7 +130,7 @@
 
 @layer components {
   .hero {
-    @apply h-screen w-screen bg-orange;
+    @apply bg-orange;
   }
   .hero-shadow {
     background-image: 
