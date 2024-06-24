@@ -3,3 +3,4 @@ Disallow: /cgi-bin/
 Disallow: /tailwind.css
 Disallow: /output.css
 Disallow: /fonts/
+Sitemap: https://notallonesandzeros.com/sitemap.xml
