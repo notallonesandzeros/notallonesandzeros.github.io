@@ -21,8 +21,11 @@ module.exports = {
       yellow: '#EDB241',
       'pale-yellow': '#F8C07E',
       green: '#A1C457',
+      'pale-green': '#C8FEDB',
       red: '#F34542',
       'pale-red': '#FAB5B3',
+      'gradient-red': '#F8807E',
+      'gradient-yellow': '#F4DD92'
     },
     extend: {}
   },
