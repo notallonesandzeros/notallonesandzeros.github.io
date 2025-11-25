@@ -35,11 +35,15 @@ document.addEventListener('DOMContentLoaded', () => {
 					el.addEventListener('mouseenter', () => {
 						el.classList.remove('has-text-grey');
 						el.classList.add(colorClass);
+						// Update label to show new class
+						updateDimensions();
 					});
 					
 					el.addEventListener('mouseleave', () => {
 						el.classList.remove(colorClass);
 						el.classList.add('has-text-grey');
+						// Update label to show new class
+						updateDimensions();
 					});
 				}
 				
