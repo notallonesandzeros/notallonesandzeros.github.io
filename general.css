@@ -9,7 +9,7 @@ body, html {
 }
 
 .hero.is-fullheight {
-  height: 100svh;
+  min-height: 100svh;
 }
 
 .is-size-display {
