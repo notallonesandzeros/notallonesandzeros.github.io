@@ -12,6 +12,17 @@ body, html {
   min-height: 100svh;
 }
 
+@media screen and (max-width: 768px) {
+  .hero.is-medium {
+    min-height: 100svh;
+  }
+
+  .hero.is-medium .hero-body{
+    align-items: center;
+    display: flex;
+  }
+}
+
 .is-size-display {
   font-size: clamp(3.2rem, 8vw, 9rem);
   font-weight: bold;
