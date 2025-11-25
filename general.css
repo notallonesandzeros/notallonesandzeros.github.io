@@ -8,6 +8,24 @@ body, html {
   font-family: 'Epoch', sans-serif;
 }
 
+details {
+  margin-bottom: 1rem;
+}
+
+details p {
+  margin-left: 2rem;
+}
+
+summary.title {
+  cursor: pointer;
+  padding: .5rem;
+  margin-bottom: 0.5rem !important;
+}
+
+summary:hover {
+  background-color: hsl(var(--bulma-link-h), var(--bulma-link-s), var(--bulma-link-l));
+}
+
 .hero.is-fullheight {
   min-height: 100svh;
 }
